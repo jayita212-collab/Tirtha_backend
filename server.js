@@ -32,10 +32,10 @@ app.post("/summarize", async (req, res) => {
       "https://router.huggingface.co/hf-inference/models/sshleifer/distilbart-cnn-12-6",
       {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization: Bearer ${process.env.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}" // 🔑 replace
-        },
+       headers: {
+  "Content-Type": "application/json",
+  Authorization: `Bearer ${process.env.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}`
+}
         body: JSON.stringify({
           inputs: trimmedText,
           parameters: {
