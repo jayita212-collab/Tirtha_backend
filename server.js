@@ -34,7 +34,7 @@ app.post("/summarize", async (req, res) => {
           Authorization: `Bearer ${process.env.OPENROUTER_API_KEY }` // ✅ FIXED
         },
         body: JSON.stringify({
-          model: "mistralai/mistral-7b-instruct", // ✅ FREE MODEL
+          model: "meta-llama/llama-3-8b-instruct", // ✅ FREE MODEL
           messages: [
             {
               role: "user",
